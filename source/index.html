@@ -4,28 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
+    <meta name="description" content="Сайт производителя печатных плат">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/PTMono-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/RobotoCondensed-bold.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a class="header__logo logo" href="index.html" rel="home" aria-label="На главную Smart Device">
+              <svg class="logo__image logo__image--desktop" width="215" height="55" alt="Логотип Smart Device" aria-hidden="true">
+                <use href="img/sprite.svg#logo-desktop"></use>
+              </svg>
+              <svg class="logo__image logo__image--mobile" width="35" height="35" alt="Логотип Smart Device" aria-hidden="true">
+                <use href="img/sprite.svg#logo-mobile"></use>
+              </svg>
+            </a>
+            <div class="header__contacts">
+              <ul class="header__contacts-list">
+                <li class="header__contacts-item">
+                  <a href="mailto:info@sd.ru" class="header__contacts-link">
+                    <svg class="header__contacts-icon" width="20" height="20" alt="Наша электронная почта" aria-hidden="true">
+                      <use href="img/sprite.svg#icon-header-mail"></use>
+                      </svg>
+                    <span class="header__contacts-text">info@sd.ru</span>
+                  </a>
+                </li>
+                <li class="header__contacts-item header__contacts-item--last-item">
+                  <a href="tel:+74950005252" class="header__contacts-link">
+                    <svg class="header__contacts-icon" width="20" height="20" alt="Контактный телефон" aria-hidden="true">
+                      <use href="img/sprite.svg#icon-header-phone"></use>
+                    </svg>
+                    <span class="header__contacts-text">+7 (495) 000 52 52</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__button-container">
+              <a class="btn header__button" href="#" data-open-modal="feedback">Заказать звонок</a>
+            </div>
+          </div>
+        </div>
       </header>
+
       <main>
         <section class="intro">
           <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
+            <h1>Сайт производителя печатных плат.</h1>
+            <!-- <p>На данной странице показан пример модальных окон.</p>
             <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
             <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p> -->
+
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__contacts">
+              <div class="footer__contacts-wrapper">
+                <a href="#" class="footer__logo" rel="home" aria-label="На главную Smart Device">
+                  <svg class="logo__image logo__image--footer" width="215" height="55" alt="Логотип Smart Device" aria-hidden="true">
+                    <use href="img/sprite.svg#logo-desktop"></use>
+                  </svg>
+                </a>
+                <ul class="footer__socials-list">
+                  <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://ok.ru" target="_blank" rel="noopener nofollow" title="Наш Одноклассники">
+                      <svg class="footer__socials-image" width="30" height="30" alt="Логотип Одноклассники" aria-hidden="true">
+                        <use href="img/sprite.svg#icon-ok"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://vk.ru" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+                      <svg class="footer__socials-image" width="30" height="30" alt="Логотип Вконтакте" aria-hidden="true">
+                        <use href="img/sprite.svg#icon-vk"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="footer__socials-item">
+                    <a class="footer__socials-link" href="https://ru.pinterest.com" target="_blank" rel="noopener nofollow" title="Наш Pinterest">
+                      <svg class="footer__socials-image" width="30" height="30" alt="Логотип Pinterest" aria-hidden="true">
+                        <use href="img/sprite.svg#icon-pinterest"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <ul class="footer__block-group" data-accordion="parent" data-single="" data-destroy="(max-width: 767px)">
+              <li class="footer__block-item" data-accordion="element">
+                <h3 class="footer__title">
+                  <button class="footer__title-button" type="button" data-accordion="button">Разделы сайта</button>
+                </h3>
+                <ul class="footer__list footer__list--navigation" data-accordion="content">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">О Компании</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Продукты</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Производство печатных плат</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Монтаж печатных плат</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Комплектующие</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Доставка</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__block-item" data-accordion="element">
+                <h3 class="footer__title">
+                  <button class="footer__title-button" type="button" data-accordion="button">Наш офис</button>
+                </h3>
+                <ul class="footer__list footer__list--info" data-accordion="content">
+                  <li class="footer__item">
+                    <a class="footer__link" href="#" title="Адрес офиса">г. Мытищи, Олимпийский проспект, д.10</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="tel:+74955894050" title="Телефон офиса">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="tel:+79253895829" title="Телефон офиса">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="footer__link" href="tel:+79253647813" title="Телефон офиса">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
 
