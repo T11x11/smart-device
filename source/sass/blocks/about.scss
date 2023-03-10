@@ -39,7 +39,7 @@
     background-size: 150px 320px;
     background-repeat: no-repeat;
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @include retina {
       background-image: url("../../img/year@2x.png");
     }
 

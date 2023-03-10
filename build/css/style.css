@@ -1542,13 +1542,65 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  text-align: center;
   background-color: transparent;
   color: #00b2ff;
   border: 1px solid #00b2ff;
   border-radius: 3px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+.catalog {
+  color: #f2f5f6;
+  background-color: #041827;
+}
+
+.catalog__wrapper {
+  padding: 10px 10px;
+}
+
+.catalog__titles {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.catalog__title-mobile {
+  display: none;
+}
+
+.catalog__cards {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.catalog__card {
+  height: 650px;
+  min-width: 350px;
+}
+
+.catalog__card--production {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-desktop.png");
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-desktop.png");
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog__card-title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #f2f5f6;
 }
 
 .advantages__wrapper {
@@ -1914,6 +1966,12 @@ body {
     margin-top: -8px;
   }
 
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-tablet.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet.png");
+  }
+
   .advantages__wrapper {
     padding: 80px 25px 30px;
   }
@@ -2007,6 +2065,12 @@ body {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/intro-bg-tablet@2x.png");
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/intro-bg-tablet@2x.png");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/intro-bg-tablet@2x.png");
+  }
+
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-tablet@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet@2x.png");
   }
 }
 
@@ -2115,6 +2179,24 @@ body {
     min-width: 160px;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  .catalog__titles {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .catalog__title-desktop {
+    display: none;
+  }
+
+  .catalog__title-mobile {
+    display: block;
+  }
+
+  .catalog__card-title {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .advantages__wrapper {
@@ -2410,5 +2492,11 @@ body {
 
   .about__title::after {
     background-image: url("../../img/year@2x.png");
+  }
+
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-desktop@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-desktop@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-desktop@2x.png");
   }
 }
