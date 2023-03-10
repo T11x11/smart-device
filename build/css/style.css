@@ -1323,6 +1323,7 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  z-index: 99;
 }
 
 .header__wrapper {
@@ -1556,10 +1557,12 @@ body {
 }
 
 .catalog__wrapper {
-  padding: 10px 10px;
+  padding: 65px 62px 65px 78px;
 }
 
 .catalog__titles {
+  margin: 0;
+  margin-bottom: 54px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -1573,18 +1576,19 @@ body {
 .catalog__cards {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 4.5vw;
+  -moz-column-gap: 4.5vw;
+  column-gap: 4.5vw;
   list-style: none;
 }
 
 .catalog__card {
   height: 650px;
-  min-width: 350px;
+  max-width: 350px;
 }
 
 .catalog__card--production {
@@ -1595,7 +1599,62 @@ body {
   background-size: cover;
 }
 
+.catalog__card--mount {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-mount-bg-desktop.png");
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-desktop.png");
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog__card--parts {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-parts-bg-desktop.png");
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-desktop.png");
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.catalog__link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.catalog__link::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #00b2ff;
+  border-top-left-radius: 3px;
+  right: 0;
+  bottom: 0;
+}
+
+.catalog__link::after {
+  content: "";
+  position: absolute;
+  right: 27px;
+  bottom: 26px;
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid #f2f5f6;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.catalog__link.focus-visible:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .catalog__card-title {
+  max-width: 230px;
+  margin: 0;
+  padding: 47px 5px 5px 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -1950,7 +2009,7 @@ body {
   }
 
   .about__wrapper {
-    padding: 45px 12px 120px 200px;
+    padding: 45px 12px 80px 200px;
   }
 
   .about__title::after {
@@ -1966,10 +2025,48 @@ body {
     margin-top: -8px;
   }
 
+  .catalog__wrapper {
+    padding: 55px 25px 65px 25px;
+  }
+
+  .catalog__titles {
+    margin-bottom: 38px;
+  }
+
+  .catalog__cards {
+    -ms-grid-columns: none;
+    grid-template-columns: none;
+    row-gap: 30px;
+  }
+
+  .catalog__card {
+    height: 250px;
+    max-width: 100%;
+  }
+
   .catalog__card--production {
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-tablet.png");
     background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet.png");
     background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet.png");
+  }
+
+  .catalog__card--mount {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-mount-bg-tablet.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-tablet.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-tablet.png");
+  }
+
+  .catalog__card--parts {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-parts-bg-tablet.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-tablet.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-tablet.png");
+  }
+
+  .catalog__card-title {
+    max-width: 200px;
+    padding: 37px 5px 5px 45px;
   }
 
   .advantages__wrapper {
@@ -2072,6 +2169,18 @@ body {
     background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet@2x.png");
     background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-tablet@2x.png");
   }
+
+  .catalog__card--mount {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-mount-bg-tablet@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-tablet@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-tablet@2x.png");
+  }
+
+  .catalog__card--parts {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-parts-bg-tablet@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-tablet@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-tablet@2x.png");
+  }
 }
 
 @media (max-width: 767px) {
@@ -2153,7 +2262,7 @@ body {
   }
 
   .about__wrapper {
-    padding: 21px 12px 120px 9px;
+    padding: 21px 12px 80px 9px;
   }
 
   .about__title {
@@ -2181,7 +2290,13 @@ body {
     line-height: 16px;
   }
 
+  .catalog__wrapper {
+    padding: 46px 9px 65px 9px;
+  }
+
   .catalog__titles {
+    margin-bottom: 29px;
+    padding-right: 15px;
     font-size: 28px;
     line-height: 140.62%;
   }
@@ -2194,7 +2309,39 @@ body {
     display: block;
   }
 
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-mobile.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-mobile.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-mobile.png");
+  }
+
+  .catalog__card--mount {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-mount-bg-mobile.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-mobile.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-mobile.png");
+  }
+
+  .catalog__card--parts {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-parts-bg-mobile.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-mobile.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-mobile.png");
+  }
+
+  .catalog__link::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .catalog__link::after {
+    width: 4px;
+    height: 4px;
+    right: 17px;
+    bottom: 18px;
+  }
+
   .catalog__card-title {
+    max-width: 170px;
+    padding: 26px 5px 5px 30px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -2427,6 +2574,24 @@ body {
     background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/intro-bg-mobile@2x.png");
     background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/intro-bg-mobile@2x.png");
   }
+
+  .catalog__card--production {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-mobile@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-mobile@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-mobile@2x.png");
+  }
+
+  .catalog__card--mount {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-mount-bg-mobile@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-mobile@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-mobile@2x.png");
+  }
+
+  .catalog__card--parts {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-parts-bg-mobile@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-mobile@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-mobile@2x.png");
+  }
 }
 
 @media (max-width: 767px) and (hover: hover) {
@@ -2454,6 +2619,10 @@ body {
 
   .header__contacts-link:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .catalog__link:hover:not(.focus-visible) {
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   .advantages__item:hover:not(.focus-visible) {
@@ -2498,5 +2667,17 @@ body {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-prod-bg-desktop@2x.png");
     background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-desktop@2x.png");
     background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-prod-bg-desktop@2x.png");
+  }
+
+  .catalog__card--mount {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-mount-bg-desktop@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-desktop@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-mount-bg-desktop@2x.png");
+  }
+
+  .catalog__card--parts {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), url("../../img/card-parts-bg-desktop@2x.png");
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-desktop@2x.png");
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), url("../../img/card-parts-bg-desktop@2x.png");
   }
 }

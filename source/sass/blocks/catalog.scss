@@ -4,16 +4,32 @@
 }
 
 .catalog__wrapper {
-  padding: 10px 10px;
+  padding: 65px 62px 65px 78px;
+
+  @include vp-1023 {
+    padding: 55px 25px 65px 25px;
+  }
+
+  @include vp-767 {
+    padding: 46px 9px 65px 9px;
+  }
 }
 
 .catalog__titles {
+  margin: 0;
+  margin-bottom: 54px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;
 
+  @include vp-1023 {
+    margin-bottom: 38px;
+  }
+
   @include vp-767 {
+    margin-bottom: 29px;
+    padding-right: 15px;
     font-size: 28px;
     line-height: 140.62%;
   }
@@ -36,14 +52,25 @@
 .catalog__cards {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4.5vw;
   list-style: none;
+
+  @include vp-1023 {
+    grid-template-columns: none;
+    row-gap: 30px;
+  }
 }
 
 .catalog__card {
   height: 650px;
-  min-width: 350px;
+  max-width: 350px;
+
+  @include vp-1023 {
+    height: 250px;
+    max-width: 100%;
+  }
 
   &--production {
     background-image: $card-bg-gradient, url("../../img/card-prod-bg-desktop.png");
@@ -55,31 +82,143 @@
     }
 
     @include vp-1023 {
+      background-repeat: no-repeat;
+      background-size: cover;
       background-image: $card-bg-gradient, url("../../img/card-prod-bg-tablet.png");
 
       @include retina {
         background-image: $card-bg-gradient, url("../../img/card-prod-bg-tablet@2x.png");
       }
     }
+
+    @include vp-767 {
+      background-image: $card-bg-gradient, url("../../img/card-prod-bg-mobile.png");
+
+      @include retina {
+        background-image: $card-bg-gradient, url("../../img/card-prod-bg-mobile@2x.png");
+      }
+    }
   }
 
-  // &--mount {
+  &--mount {
+    background-image: $card-bg-gradient, url("../../img/card-mount-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  // }
+    @include retina {
+      background-image: $card-bg-gradient, url("../../img/card-mount-bg-desktop@2x.png");
+    }
 
-  // &--parts {
+    @include vp-1023 {
+      background-image: $card-bg-gradient, url("../../img/card-mount-bg-tablet.png");
 
-  // }
+      @include retina {
+        background-image: $card-bg-gradient, url("../../img/card-mount-bg-tablet@2x.png");
+      }
+    }
+
+    @include vp-767 {
+      background-image: $card-bg-gradient, url("../../img/card-mount-bg-mobile.png");
+
+      @include retina {
+        background-image: $card-bg-gradient, url("../../img/card-mount-bg-mobile@2x.png");
+      }
+    }
+  }
+
+  &--parts {
+    background-image: $card-bg-gradient, url("../../img/card-parts-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include retina {
+      background-image: $card-bg-gradient, url("../../img/card-parts-bg-desktop@2x.png");
+    }
+
+    @include vp-1023 {
+      background-image: $card-bg-gradient, url("../../img/card-parts-bg-tablet.png");
+
+      @include retina {
+        background-image: $card-bg-gradient, url("../../img/card-parts-bg-tablet@2x.png");
+      }
+    }
+
+    @include vp-767 {
+      background-image: $card-bg-gradient, url("../../img/card-parts-bg-mobile.png");
+
+      @include retina {
+        background-image: $card-bg-gradient, url("../../img/card-parts-bg-mobile@2x.png");
+      }
+    }
+  }
+}
+
+.catalog__link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $color-deep-sky-blue;
+    border-top-left-radius: 3px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 27px;
+    bottom: 26px;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid $color-alice-blue;
+    border-bottom: 1px solid $color-alice-blue;
+    transform: rotate(-45deg);
+  }
+
+  @include vp-767 {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      width: 4px;
+      height: 4px;
+      right: 17px;
+      bottom: 18px;
+    }
+  }
+
+  @include hover-focus {
+    background-color: $color-white-transparent-light;
+  }
 }
 
 .catalog__card-title {
+  max-width: 230px;
+  margin: 0;
+  padding: 47px 5px 5px 40px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   color: $color-alice-blue;
 
+  @include vp-1023 {
+    max-width: 200px;
+    padding: 37px 5px 5px 45px;
+  }
+
   @include vp-767 {
+    max-width: 170px;
+    padding: 26px 5px 5px 30px;
     font-size: 18px;
     line-height: 30px;
   }
