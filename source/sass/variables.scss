@@ -16,11 +16,13 @@ $color-alice-blue-light:            #f8fdff;
 $color-alice-blue:                  #f2f5f6;
 $color-deep-sky-blue:               #00b2ff;
 $color-black-pearl:                 #041827;
+$color-whisper:                     #ebebeb;
 $color-white-transparent:           rgba(255, 255, 255, 0.7);
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
 $black-pearl-to-bottom:             linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+$background-gradient:                linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 
 // Typography
 // ---------------------------------

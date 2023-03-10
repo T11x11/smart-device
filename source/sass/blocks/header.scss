@@ -7,7 +7,7 @@
 }
 
 .header__wrapper {
-  padding: 29px 0;
+  padding: 29px 70px;
   display: flex;
   justify-content: space-between;
 
@@ -16,7 +16,7 @@
   }
 
   @include vp-767 {
-    padding: 15px 0;
+    padding: 15px 10px;
   }
 }
 

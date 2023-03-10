@@ -1,0 +1,155 @@
+.advantages__wrapper {
+  padding: 120px 61px 30px 78px;
+
+  @include vp-1023 {
+    padding: 80px 25px 30px;
+  }
+
+  @include vp-767 {
+    padding: 50px 9px 25px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  list-style: none;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantages__item {
+  width: calc(50% - 15px);
+  max-width: 595px;
+  min-height: 300px;
+  padding: 40px 44px 70px 40px;
+  border: 1px solid $color-whisper;
+  border-left: 5px solid $color-deep-sky-blue;
+  box-sizing: border-box;
+
+  @include hover-focus {
+    color: $color-alice-blue;
+    background-color: $color-deep-sky-blue;
+    border: 1px solid $color-alice-blue;
+    border-left: 5px solid $color-deep-sky-blue;
+
+    .advantages__icon,
+    .advantages__title,
+    .advantages__description {
+      color: $color-alice-blue;
+    }
+  }
+
+  @include vp-1023 {
+    padding: 39px 40px 32px;
+    min-height: 360px;
+
+    &--privacy .advantages__icon {
+      margin-bottom: 7px;
+    }
+
+    &--privacy .advantages__title {
+      margin-bottom: 7px;
+    }
+
+    &--cost .advantages__icon {
+      margin-bottom: 4px;
+    }
+
+    &--cost .advantages__title {
+      margin-bottom: 3px;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+    padding: 29px 24px 32px 25px;
+    min-height: 340px;
+
+    &--privacy,
+    &--cost {
+      min-height: 325px;
+    }
+
+    &--privacy .advantages__icon {
+      margin-bottom: 12px;
+    }
+
+    &--privacy .advantages__title {
+      margin-bottom: 13px;
+    }
+
+    &--cost .advantages__icon {
+      margin-bottom: 12px;
+    }
+
+    &--cost .advantages__title {
+      margin-bottom: 13px;
+    }
+  }
+}
+
+.advantages__icon {
+  margin-bottom: 12px;
+  color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 8px;
+  }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: $color-deep-sky-blue;
+
+  @include vp-1023 {
+    margin-bottom: 9px;
+  }
+
+  @include vp-767 {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+.advantages__description {
+  max-width: 505px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: $color-black-pearl;
+
+  br {
+    display: none;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 135%;
+
+    br {
+      display: block;
+    }
+  }
+}

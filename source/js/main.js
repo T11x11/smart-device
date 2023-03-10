@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
+import {showOrHide} from './modules/more-text/more-text';
 
 // ---------------------------------
 
@@ -11,8 +12,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  showOrHide();
 
   // Modules
+  window.addEventListener('load', () => {
+    initAccordions();
+  });
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -22,13 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
-  });
-});
-
-
-window.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('load', () => {
-    initAccordions();
   });
 });
 
