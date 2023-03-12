@@ -4,9 +4,11 @@
   background-image: $background-gradient,
     url("../../img/intro-bg-desktop.png");
 
-  @include retina {
-    background-image: $background-gradient,
-      url("../../img/intro-bg-desktop@2x.png");
+  @include vp-1024 {
+    @include retina {
+      background-image: $background-gradient,
+        url("../../img/intro-bg-desktop@2x.png");
+    }
   }
 
   @include vp-1023 {
@@ -35,61 +37,66 @@
   background-position: center;
   background-size: cover;
   object-fit: cover;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 32px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 94px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: $color-alice-blue;
+
+    @include vp-1023 {
+      margin: 0;
+      font-size: 64px;
+      line-height: 75px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 9px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+  }
+
+  p {
+    width: 685px;
+    margin: 0;
+    margin-bottom: 47px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 155%;
+    color: $color-alice-blue;
+
+    @include vp-1023 {
+      margin-bottom: 57px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 45px;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
 }
 
 .intro__wrapper {
-  padding: 304px 50px 200px 203px;
+  padding: 304px 24px 200px 0;
+  padding-left: 10.59vw;
 
   @include vp-1023 {
-    padding: 180px 50px 205px 25px;
+    padding: 180px 50px 205px 0;
+    padding-left: 3.25vw;
   }
 
   @include vp-767 {
-    padding: 149px 9px 198px 9px;
-  }
-}
-
-.intro__title {
-  margin: 0;
-  margin-bottom: 32px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 94px;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: $color-alice-blue;
-
-  @include vp-1023 {
-    margin: 0;
-    font-size: 64px;
-    line-height: 75px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 9px;
-    font-size: 36px;
-    line-height: 42px;
-  }
-}
-
-.intro__description {
-  width: 685px;
-  margin: 0;
-  margin-bottom: 47px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 155%;
-  color: $color-alice-blue;
-
-  @include vp-1023 {
-    margin-bottom: 57px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 45px;
-    width: 270px;
-    font-size: 14px;
+    padding: 149px 9px 189px 0;
+    padding-left: 2.81vw;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -117,7 +124,9 @@
   @include vp-767 {
     padding: 13px 0 11px;
     margin-left: 0;
-    width: 270px;
+    width: 100%;
+    max-width: 570px;
+    align-self: center;
     font-size: 14px;
     line-height: 16px;
   }

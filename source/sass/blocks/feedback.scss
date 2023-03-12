@@ -1,0 +1,192 @@
+.feedback {
+  position: relative;
+  background: $feedback-bg-gradient;
+  background-color: $color-deep-sky-blue;
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    background: none;
+    background-color: $color-deep-sky-blue;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    background-image: url("../../img/airplane.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 510px;
+    height: 285px;
+    top: 246px;
+    right: 54.3vw;
+
+    @include retina {
+      background-image: url("../../img/airplane@2x.png");
+    }
+
+    @include vp-1279 {
+      right: 49vw;
+    }
+
+    @include vp-1023 {
+      content: none;
+    }
+  }
+}
+
+.feedback__wrapper {
+  width: 48%;
+  margin-left: auto;
+  padding: 165px 0 230px 0;
+
+  @include vp-1023 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 45px 25px 105px 25px;
+  }
+
+  @include vp-767 {
+    padding: 48px 9px 89px 9px;
+  }
+}
+
+.feedback h2 {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @include vp-1023 {
+    margin-bottom: 7px;
+  }
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.feedback p {
+  margin: 0;
+  margin-bottom: 35px;
+  font-size: 16px;
+  line-height: 22px;
+
+  @include vp-1023 {
+    margin-bottom: 26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.feedback form {
+  max-width: 580px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.6vw;
+  row-gap: 21px;
+
+  @include vp-1023 {
+    max-width: 100%;
+    column-gap: 3.6vw;
+  }
+
+  @include vp-767 {
+    max-width: none;
+    grid-template-columns: none;
+    column-gap: 0;
+    row-gap: 23px;
+  }
+}
+
+.feedback__form .custom-textarea {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  grid-column: -1/1;
+  overflow: hidden;
+}
+
+.feedback__form input,
+.feedback__form textarea {
+  color: $color-alice-blue;
+  background-color: $color-blue-transparent;
+  border: none;
+  border-radius: 3px;
+
+  @include hover-focus {
+    &::placeholder {
+      opacity: 0.6;
+    }
+  }
+}
+
+.feedback__form label {
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.feedback__form .custom-toggle__label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+
+  @include vp-767 {
+    max-width: 100%;
+  }
+}
+
+.feedback__submit-wrapper {
+  padding-top: 14px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  grid-column: -1/1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1023 {
+    padding-top: 12px;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    padding-top: 7px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.feedback__submit-button {
+  display: inline-block;
+  width: 265px;
+  padding: 15px 5px 11px;
+  align-self: flex-start;
+  background-color: $color-black-pearl;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  @include vp-1023 {
+    padding: 17px 5px 11px;
+    line-height: 17px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}

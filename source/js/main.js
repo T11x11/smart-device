@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordion/init-accordion';
-import {showOrHide} from './modules/more-text/more-text';
+import {dropDown} from './modules/drop-down/drop-down';
 
 // ---------------------------------
 
@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  showOrHide();
+  dropDown();
 
   // Modules
   window.addEventListener('load', () => {
