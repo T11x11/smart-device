@@ -68,92 +68,93 @@
   max-width: 350px;
 
   @include vp-1023 {
-    height: 250px;
+    min-height: 250px;
+    height: auto;
     max-width: 100%;
   }
 
   &--production {
-    background-image: $card-bg-gradient, url("../../img/card-prod-bg-desktop.png");
+    background-image: $card-bg-gradient, url("../../img/card-prod-bg-desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include vp-1024 {
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-prod-bg-desktop@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-prod-bg-desktop@2x.webp");
       }
     }
 
     @include vp-1023 {
+      background-image: $card-bg-gradient, url("../../img/card-prod-bg-tablet.webp");
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: $card-bg-gradient, url("../../img/card-prod-bg-tablet.png");
 
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-prod-bg-tablet@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-prod-bg-tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: $card-bg-gradient, url("../../img/card-prod-bg-mobile.png");
+      background-image: $card-bg-gradient, url("../../img/card-prod-bg-mobile.webp");
 
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-prod-bg-mobile@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-prod-bg-mobile@2x.webp");
       }
     }
   }
 
   &--mount {
-    background-image: $card-bg-gradient, url("../../img/card-mount-bg-desktop.png");
+    background-image: $card-bg-gradient, url("../../img/card-mount-bg-desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include vp-1024 {
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-mount-bg-desktop@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-mount-bg-desktop@2x.webp");
       }
     }
 
     @include vp-1023 {
-      background-image: $card-bg-gradient, url("../../img/card-mount-bg-tablet.png");
+      background-image: $card-bg-gradient, url("../../img/card-mount-bg-tablet.webp");
 
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-mount-bg-tablet@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-mount-bg-tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: $card-bg-gradient, url("../../img/card-mount-bg-mobile.png");
+      background-image: $card-bg-gradient, url("../../img/card-mount-bg-mobile.webp");
 
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-mount-bg-mobile@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-mount-bg-mobile@2x.webp");
       }
     }
   }
 
   &--parts {
-    background-image: $card-bg-gradient, url("../../img/card-parts-bg-desktop.png");
+    background-image: $card-bg-gradient, url("../../img/card-parts-bg-desktop.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
     @include vp-1024 {
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-parts-bg-desktop@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-parts-bg-desktop@2x.webp");
       }
     }
 
     @include vp-1023 {
-      background-image: $card-bg-gradient, url("../../img/card-parts-bg-tablet.png");
+      background-image: $card-bg-gradient, url("../../img/card-parts-bg-tablet.webp");
 
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-parts-bg-tablet@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-parts-bg-tablet@2x.webp");
       }
     }
 
     @include vp-767 {
-      background-image: $card-bg-gradient, url("../../img/card-parts-bg-mobile.png");
+      background-image: $card-bg-gradient, url("../../img/card-parts-bg-mobile.webp");
 
       @include retina {
-        background-image: $card-bg-gradient, url("../../img/card-parts-bg-mobile@2x.png");
+        background-image: $card-bg-gradient, url("../../img/card-parts-bg-mobile@2x.webp");
       }
     }
   }

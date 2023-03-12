@@ -27,7 +27,7 @@
             <div class="header__contacts">
               <ul class="header__contacts-list">
                 <li class="header__contacts-item">
-                  <a href="mailto:info@sd.ru" class="header__contacts-link">
+                  <a href="mailto:info@sd.ru" class="header__contacts-link" aria-label="Написать письмо">
                     <svg class="header__contacts-icon" width="20" height="20" aria-hidden="true">
                       <use href="img/sprite.svg#icon-header-mail"></use>
                       </svg>
@@ -35,7 +35,7 @@
                   </a>
                 </li>
                 <li class="header__contacts-item header__contacts-item--last-item">
-                  <a href="tel:+74950005252" class="header__contacts-link">
+                  <a href="tel:+74950005252" class="header__contacts-link" aria-label="Позвонить">
                     <svg class="header__contacts-icon" width="20" height="20" aria-hidden="true">
                       <use href="img/sprite.svg#icon-header-phone"></use>
                     </svg>
@@ -45,7 +45,7 @@
               </ul>
             </div>
             <div class="header__button-container">
-              <a class="btn header__button" href="#" data-open-modal="feedback">Заказать звонок</a>
+              <a class="btn header__button" href="#" data-open-modal="feedback-modal">Заказать звонок</a>
             </div>
           </div>
         </div>
@@ -58,7 +58,7 @@
             <div class="intro__wrapper">
               <h2>Печатные платы</h2>
               <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="btn intro__button" href="#feedback" aria-label="consultation">
+              <a class="btn intro__button" href="#feedback" aria-label="Получить консультацию">
                 <!-- Классы у span для cмены текста при адаптиве, стилизация через каскад -->
                 <span class="intro__button-text intro__button-text--desktop">Получить бесплатную консультацию</span>
                 <span class="intro__button-text intro__button-text--mobile">бесплатная консультация</span>
@@ -151,17 +151,17 @@
               </h2>
               <ul class="catalog__cards">
                 <li class="catalog__card catalog__card--production">
-                  <a class="catalog__link" href="#">
+                  <a class="catalog__link" href="#" aria-label="Карточка каталога">
                     <h3>Производство печатных плат</h3>
                   </a>
                 </li>
                 <li class="catalog__card catalog__card--mount">
-                  <a class="catalog__link" href="#">
+                  <a class="catalog__link" href="#" aria-label="Карточка каталога">
                     <h3>Монтаж печатных плат</h3>
                   </a>
                 </li>
                 <li class="catalog__card catalog__card--parts">
-                  <a class="catalog__link" href="#">
+                  <a class="catalog__link" href="#" aria-label="Карточка каталога">
                     <h3>Комплектующие для&nbsp;светотехники</h3>
                   </a>
                 </li>
@@ -179,13 +179,13 @@
                   <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                     <label>
                       <span class="visually-hidden">Имя</span>
-                      <input type="text" name="user-name" placeholder="Имя" aria-invalid="true">
+                      <input type="text" name="user-name" placeholder="Имя" aria-invalid="true" required>
                     </label>
                   </div>
                   <div class="custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
                     <label>
                       <span class="visually-hidden">Номер телефона</span>
-                      <input type="tel" name="user-phone" placeholder="Телефон">
+                      <input type="tel" name="user-phone" placeholder="Телефон" required>
                     </label>
                   </div>
                   <div class="custom-textarea" data-validate-type="text">
@@ -199,7 +199,7 @@
                     <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
                       <label>
                         <span class="visually-hidden">Согласие на обработку данных</span>
-                        <input type="checkbox" value="user-agreement-1" name="user-agreement" checked>
+                        <input type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
                         <span class="custom-toggle__icon"></span>
                         <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                       </label>
@@ -225,21 +225,21 @@
                 </a>
                 <ul class="footer__socials-list">
                   <li class="footer__socials-item">
-                    <a class="footer__socials-link" href="https://ok.ru" target="_blank" rel="noopener nofollow" title="Наш Одноклассники">
+                    <a class="footer__socials-link" href="https://ok.ru" target="_blank" rel="noopener nofollow" aria-label="Наш Одноклассники">
                       <svg class="footer__socials-image" width="30" height="30" aria-hidden="true">
                         <use href="img/sprite.svg#icon-ok"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="footer__socials-item">
-                    <a class="footer__socials-link" href="https://vk.ru" target="_blank" rel="noopener nofollow" title="Наш Вконтакте">
+                    <a class="footer__socials-link" href="https://vk.ru" target="_blank" rel="noopener nofollow" aria-label="Наш Вконтакте">
                       <svg class="footer__socials-image" width="30" height="30" aria-hidden="true">
                         <use href="img/sprite.svg#icon-vk"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="footer__socials-item">
-                    <a class="footer__socials-link" href="https://ru.pinterest.com" target="_blank" rel="noopener nofollow" title="Наш Pinterest">
+                    <a class="footer__socials-link" href="https://ru.pinterest.com" target="_blank" rel="noopener nofollow" aria-label="Наш Pinterest">
                       <svg class="footer__socials-image" width="30" height="30" aria-hidden="true">
                         <use href="img/sprite.svg#icon-pinterest"></use>
                       </svg>
@@ -283,16 +283,16 @@
                 </button>
                 <ul class="footer__list footer__list--info" data-accordion="content">
                   <li class="footer__item">
-                    <a href="#" title="Адрес офиса">г. Мытищи, Олимпийский проспект, д.10</a>
+                    <a href="#" aria-label="Адрес офиса">г. Мытищи, Олимпийский проспект, д.10</a>
                   </li>
                   <li class="footer__item">
-                    <a href="tel:+74955894050" title="Телефон офиса">+7 (495) 589-40-50</a>
+                    <a href="tel:+74955894050" aria-label="Телефон офиса">+7 (495) 589-40-50</a>
                   </li>
                   <li class="footer__item">
-                    <a href="tel:+79253895829" title="Телефон офиса">+7 (925) 389-58-29</a>
+                    <a href="tel:+79253895829" aria-label="Телефон офиса">+7 (925) 389-58-29</a>
                   </li>
                   <li class="footer__item">
-                    <a href="tel:+79253647813" title="Телефон офиса">+7 (925) 364-78-13</a>
+                    <a href="tel:+79253647813" aria-label="Телефон офиса">+7 (925) 364-78-13</a>
                   </li>
                 </ul>
               </li>
@@ -302,8 +302,7 @@
       </footer>
     </div>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload" data-modal="feedback-modal">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -314,13 +313,13 @@
               <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <label>
                   <span class="visually-hidden">Имя</span>
-                  <input type="text" name="user-name" placeholder="Имя" aria-invalid="true">
+                  <input type="text" name="user-name" placeholder="Имя" aria-invalid="true" required data-focus>
                 </label>
               </div>
               <div class="custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
                 <label>
                   <span class="visually-hidden">Номер телефона</span>
-                  <input type="tel" name="user-phone" placeholder="Телефон">
+                  <input type="tel" name="user-phone" placeholder="Телефон" required>
                 </label>
               </div>
               <div class="custom-textarea" data-validate-type="text">
@@ -334,7 +333,7 @@
                 <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
                   <label>
                     <span class="visually-hidden">Согласие на обработку данных</span>
-                    <input type="checkbox" value="user-agreement-1" name="user-agreement" checked>
+                    <input type="checkbox" value="user-agreement-1" name="user-agreement" checked required>
                     <span class="custom-toggle__icon"></span>
                     <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
                   </label>

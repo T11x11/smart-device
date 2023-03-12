@@ -13,7 +13,7 @@
     content: "";
     position: absolute;
     margin-left: 10px;
-    background-image: url("../../img/airplane.png");
+    background-image: url("../../img/airplane.webp");
     background-repeat: no-repeat;
     background-size: contain;
     width: 510px;
@@ -22,7 +22,7 @@
     right: 54.3vw;
 
     @include retina {
-      background-image: url("../../img/airplane@2x.png");
+      background-image: url("../../img/airplane@2x.webp");
     }
 
     @include vp-1279 {

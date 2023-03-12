@@ -34,13 +34,13 @@
     position: absolute;
     width: 150px;
     height: 320px;
-    background-image: url("../../img/year.png");
+    background-image: url("../../img/year.webp");
     left: -250px;
     background-size: 150px 320px;
     background-repeat: no-repeat;
 
     @include retina {
-      background-image: url("../../img/year@2x.png");
+      background-image: url("../../img/year@2x.webp");
     }
 
     @include vp-1023 {
