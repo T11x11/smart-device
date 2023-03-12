@@ -38,7 +38,7 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 146px 40px;
 
     @include vp-767 {
       padding: 60px 16px;
@@ -60,9 +60,11 @@
     position: relative;
 
     width: 500px;
-    padding: 40px;
+    padding: 35px 40px 44px;
 
+    color: $color-alice-blue;
     background-color: $color-deep-sky-blue;
+    border-radius: 3px;
 
     @include vp-767 {
       width: 100%;
@@ -70,19 +72,73 @@
     }
   }
 
+  &__form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    row-gap: 22px;
+  }
+
+  h2 {
+    margin: 0;
+    margin-bottom: 6px;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 38px;
+    padding-right: 50px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .form__submit-wrapper {
+    padding: 0;
+    padding-top: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .form__submit-button {
+    width: 100%;
+  }
+
+  .custom-toggle {
+    width: 100%;
+
+    label {
+      padding-left: 9px;
+    }
+  }
+
+  .custom-toggle__label {
+    max-width: 100%;
+  }
+
   &__close-btn {
     position: absolute;
-    top: 22px;
-    right: 22px;
+    top: 17px;
+    right: 15px;
     z-index: 1;
 
     width: 40px;
     height: 40px;
     padding: 0;
 
+    color: $color-alice-blue;
     background: $color-transparent;
     border: none;
     cursor: pointer;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
   }
 
   &--responsive {

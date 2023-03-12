@@ -174,7 +174,7 @@
             <div class="feedback__wrapper">
               <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
               <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
-              <div class="feedback__form" data-form-validate data-callback="base">
+              <div class="feedback__form form" data-form-validate data-callback="base">
                 <form action="https://echo.htmlacademy.ru" method="post">
                   <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                     <label>
@@ -194,8 +194,8 @@
                       <textarea name="user-info" placeholder="Ваш вопрос" cols="30" rows="6"></textarea>
                     </label>
                   </div>
-                  <div class="feedback__submit-wrapper">
-                    <button class="btn btn--form feedback__submit-button" type="submit">Задать вопрос</button>
+                  <div class="form__submit-wrapper">
+                    <button class="btn btn--form form__submit-button" type="submit">Задать вопрос</button>
                     <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
                       <label>
                         <span class="visually-hidden">Согласие на обработку данных</span>
@@ -307,11 +307,43 @@
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-
-
-          <p class="modal__description">Обычная модалка</p>
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+          <div class="modal__form form" data-form-validate data-callback="base">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                <label>
+                  <span class="visually-hidden">Имя</span>
+                  <input type="text" name="user-name" placeholder="Имя" aria-invalid="true">
+                </label>
+              </div>
+              <div class="custom-input" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required data-phone-length="18">
+                <label>
+                  <span class="visually-hidden">Номер телефона</span>
+                  <input type="tel" name="user-phone" placeholder="Телефон">
+                </label>
+              </div>
+              <div class="custom-textarea" data-validate-type="text">
+                <label>
+                  <span class="visually-hidden">Ваш вопрос</span>
+                  <textarea name="user-info" placeholder="Ваш вопрос" cols="30" rows="6"></textarea>
+                </label>
+              </div>
+              <div class="form__submit-wrapper">
+                <button class="btn btn--form form__submit-button" type="submit">Отправить</button>
+                <div class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
+                  <label>
+                    <span class="visually-hidden">Согласие на обработку данных</span>
+                    <input type="checkbox" value="user-agreement-1" name="user-agreement" checked>
+                    <span class="custom-toggle__icon"></span>
+                    <span class="custom-toggle__label">Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
+            <svg width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
