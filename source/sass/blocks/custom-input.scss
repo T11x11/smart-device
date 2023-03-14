@@ -19,29 +19,38 @@
       flex-grow: 1;
       min-height: 48px;
       padding: 10px;
-      padding-left: 16px;
+      padding-left: 14px;
       border-radius: 5px;
       outline: none;
+      border: 2px solid transparent;
       transition: border 0.3s ease;
 
       @media screen and (max-width: 767px) {
         max-width: unset;
         width: 100%;
       }
+
+      &:hover {
+        border: 2px solid rgba(#000000, 0.5);
+      }
+
+      &:focus {
+        border: 2px solid rgba(#000000, 0.8);
+      }
     }
 
     textarea {
-      padding-top: 26px;
+      padding-top: 23px;
       padding-bottom: 2px;
       height: 156px;
 
       @include vp-1023 {
-        padding-top: 32px;
+        padding-top: 29px;
         padding-bottom: 14px;
       }
 
       @include vp-767 {
-        padding-top: 23px;
+        padding-top: 20px;
         padding-bottom: 44px;
         height: 177px;
       }

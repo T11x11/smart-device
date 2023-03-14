@@ -13,17 +13,26 @@
     content: "";
     position: absolute;
     margin-left: 10px;
-    background-image: url("../../img/airplane.webp");
+    background-image: -webkit-image-set(
+      url("../../img/airplane@2x.webp") 2x,
+      url("../../img/airplane.webp") 1x,
+      url("../../img/airplane@2x.png") 2x,
+      url("../../img/airplane.png") 1x
+    );
+
+    background-image: image-set(
+      url("../../img/airplane@2x.webp") type("image/webp") 2x,
+      url("../../img/airplane.webp") type("image/webp") 1x,
+      url("../../img/airplane@2x.png") type("image/png") 2x,
+      url("../../img/airplane.png") type("image/png") 1x
+    );
+
     background-repeat: no-repeat;
     background-size: contain;
     width: 510px;
     height: 285px;
     top: 246px;
     right: 54.3vw;
-
-    @include retina {
-      background-image: url("../../img/airplane@2x.webp");
-    }
 
     @include vp-1279 {
       right: 49vw;
@@ -74,7 +83,7 @@
 .feedback h2 {
   margin: 0;
   margin-bottom: 12px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $ff-roboto;
   font-weight: 400;
   font-size: 36px;
   line-height: 51px;

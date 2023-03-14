@@ -7,6 +7,7 @@
   max-width: 500px;
   margin-left: 10px;
 
+
   @include vp-1023 {
     align-self: center;
     padding-top: 4px;
@@ -34,6 +35,10 @@
     span {
       margin-bottom: 0;
       margin-left: 0;
+    }
+
+    &:focus {
+      border: 2px solid rgba(#000000, 0.8);
     }
   }
 
