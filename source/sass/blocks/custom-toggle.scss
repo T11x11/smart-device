@@ -7,7 +7,6 @@
   max-width: 500px;
   margin-left: 10px;
 
-
   @include vp-1023 {
     align-self: center;
     padding-top: 4px;
@@ -38,7 +37,7 @@
     }
 
     &:focus {
-      border: 2px solid rgba(#000000, 0.8);
+      border: 2px solid rgba(0, 0, 0, 0.8);
     }
   }
 

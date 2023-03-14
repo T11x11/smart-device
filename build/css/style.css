@@ -1720,6 +1720,7 @@ body {
   -webkit-column-gap: 4.5vw;
   -moz-column-gap: 4.5vw;
   column-gap: 4.5vw;
+  row-gap: 20px;
   list-style: none;
 }
 
