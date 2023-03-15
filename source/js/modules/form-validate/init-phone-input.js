@@ -10,10 +10,12 @@ const onPhoneInputInput = (e) => {
   if (def.length >= val.length) {
     val = def;
   }
+  let j = 0;
   e.target.value = matrix.replace(/./g, (a) => {
+    j++;
     if (/[_\d]/.test(a) && i < val.length) {
       return val.charAt(i++);
-    } else if (i >= val.length) {
+    } else if (i >= val.length && j > 4) {
       return '';
     } else {
       return a;
