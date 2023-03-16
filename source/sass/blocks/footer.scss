@@ -3,7 +3,7 @@
   color: $color-white-transparent;
 
   a {
-    display: inline-block;
+    display: flex;
     color: $color-white-transparent;
   }
 
@@ -51,14 +51,14 @@
   }
 
   @include vp-767 {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     padding-left: 0;
     border-bottom: 1px solid $color-white-transparent;
   }
 }
 
 .footer__logo {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @include hover-focus {
     opacity: 0.8;
@@ -79,33 +79,34 @@
 .footer__socials-list {
   margin: 0;
   padding: 0;
-  padding-left: 15px;
+  padding-left: 10px;
   max-width: 215px;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  column-gap: 15px;
 
   @include vp-1023 {
     padding-top: 6px;
+    padding-right: 20px;
     align-items: center;
   }
 
   @include vp-767 {
     padding-left: 3px;
+    padding-right: 0;
   }
 }
 
 .footer__socials-item {
-  margin: 0 25px 10px 0;
+  margin-bottom: 10px;
 
   @include hover-focus {
     opacity: 0.8;
   }
 
-  @include vp-767 {
-    &:last-child {
-      margin-right: 0;
-    }
+  a {
+    padding: 5px;
   }
 }
 
@@ -121,7 +122,7 @@
 
   @include vp-1023 {
     max-width: none;
-    padding-top: 30px;
+    padding-top: 38px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -207,7 +208,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: repeat(4, auto);
-  row-gap: 6px;
+  row-gap: 8px;
   column-gap: 28px;
 
   &--info {
@@ -262,5 +263,9 @@
   @include hover-focus {
     opacity: 0.8;
     text-decoration: underline;
+  }
+
+  @include focus {
+    outline-offset: -3px;
   }
 }

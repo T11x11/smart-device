@@ -407,7 +407,7 @@ template {
   font-weight: 400;
   font-family: "PT Mono";
   font-display: swap;
-  src: url("../../fonts/PTMono-regular.woff2") format("woff2");
+  src: url("../fonts/PTMono-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -415,7 +415,7 @@ template {
   font-weight: 400;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-regular.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -423,7 +423,7 @@ template {
   font-weight: 700;
   font-family: "Roboto Condensed";
   font-display: swap;
-  src: url("../../fonts/RobotoCondensed-bold.woff2") format("woff2");
+  src: url("../fonts/RobotoCondensed-bold.woff2") format("woff2");
 }
 
 *,
@@ -1058,7 +1058,7 @@ html {
   width: 4px;
   height: 6px;
   top: 3px;
-  left: 4px;
+  left: 5px;
   border-right: 1px solid #f2f5f6;
   border-bottom: 1px solid #f2f5f6;
   -webkit-transform: rotate(45deg);
@@ -1491,16 +1491,16 @@ body {
 .intro {
   min-height: 880px;
   background-color: #041827;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../../img/intro-bg-desktop.webp");
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/intro-bg-desktop.webp");
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../../img/intro-bg-desktop.webp");
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") 2x, url("../../img/intro-bg-desktop.webp") 1x, url("../../img/intro-bg-desktop@2x.png") 2x, url("../../img/intro-bg-desktop.png") 1x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") 2x, url("../../img/intro-bg-desktop.webp") 1x, url("../../img/intro-bg-desktop@2x.png") 2x, url("../../img/intro-bg-desktop.png") 1x);
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") 2x, url("../../img/intro-bg-desktop.webp") 1x, url("../../img/intro-bg-desktop@2x.png") 2x, url("../../img/intro-bg-desktop.png") 1x);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
-  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/intro-bg-desktop.webp");
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/intro-bg-desktop.webp");
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/intro-bg-desktop.webp");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") 2x, url("../img/intro-bg-desktop.webp") 1x, url("../img/intro-bg-desktop@2x.png") 2x, url("../img/intro-bg-desktop.png") 1x);
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") 2x, url("../img/intro-bg-desktop.webp") 1x, url("../img/intro-bg-desktop@2x.png") 2x, url("../img/intro-bg-desktop.png") 1x);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") 2x, url("../img/intro-bg-desktop.webp") 1x, url("../img/intro-bg-desktop@2x.png") 2x, url("../img/intro-bg-desktop.png") 1x);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
+  background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1580,9 +1580,9 @@ body {
   position: absolute;
   width: 150px;
   height: 320px;
-  background-image: -webkit-image-set(url("../../img/year@2x.webp") 2x, url("../../img/year.webp") 1x, url("../../img/year@2x.png") 2x, url("../../img/year.png") 1x);
-  background-image: -webkit-image-set(url("../../img/year@2x.webp") type("image/webp") 2x, url("../../img/year.webp") type("image/webp") 1x, url("../../img/year@2x.png") type("image/png") 2x, url("../../img/year.png") type("image/png") 1x);
-  background-image: image-set(url("../../img/year@2x.webp") type("image/webp") 2x, url("../../img/year.webp") type("image/webp") 1x, url("../../img/year@2x.png") type("image/png") 2x, url("../../img/year.png") type("image/png") 1x);
+  background-image: -webkit-image-set(url("../img/year@2x.webp") 2x, url("../img/year.webp") 1x, url("../img/year@2x.png") 2x, url("../img/year.png") 1x);
+  background-image: -webkit-image-set(url("../img/year@2x.webp") type("image/webp") 2x, url("../img/year.webp") type("image/webp") 1x, url("../img/year@2x.png") type("image/png") 2x, url("../img/year.png") type("image/png") 1x);
+  background-image: image-set(url("../img/year@2x.webp") type("image/webp") 2x, url("../img/year.webp") type("image/webp") 1x, url("../img/year@2x.png") type("image/png") 2x, url("../img/year.png") type("image/png") 1x);
   left: -250px;
   background-size: 150px 320px;
   background-repeat: no-repeat;
@@ -1737,37 +1737,37 @@ body {
 }
 
 .catalog__card--production {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-prod-bg-desktop@2x.webp") 2x, url("../../img/card-prod-bg-desktop.webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") 2x, url("../../img/card-prod-bg-desktop.png") 1x);
-  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-desktop@2x.webp") 2x, url("../../img/card-prod-bg-desktop.webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") 2x, url("../../img/card-prod-bg-desktop.png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-desktop@2x.webp") 2x, url("../../img/card-prod-bg-desktop.webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") 2x, url("../../img/card-prod-bg-desktop.png") 1x);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-desktop.png") type("image/png") 1x);
-  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-desktop.png") type("image/png") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-prod-bg-desktop@2x.webp") 2x, url("../img/card-prod-bg-desktop.webp") 1x, url("../img/card-prod-bg-desktop@2x.png") 2x, url("../img/card-prod-bg-desktop.png") 1x);
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-desktop@2x.webp") 2x, url("../img/card-prod-bg-desktop.webp") 1x, url("../img/card-prod-bg-desktop@2x.png") 2x, url("../img/card-prod-bg-desktop.png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-desktop@2x.webp") 2x, url("../img/card-prod-bg-desktop.webp") 1x, url("../img/card-prod-bg-desktop@2x.png") 2x, url("../img/card-prod-bg-desktop.png") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-prod-bg-desktop.png") type("image/png") 1x);
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-prod-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-prod-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-prod-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-desktop.webp") type("image/webp") 1x, url("../img/card-prod-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-prod-bg-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .catalog__card--mount {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-mount-bg-desktop@2x.webp") 2x, url("../../img/card-mount-bg-desktop.webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") 2x, url("../../img/card-mount-bg-desktop.png") 1x);
-  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-desktop@2x.webp") 2x, url("../../img/card-mount-bg-desktop.webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") 2x, url("../../img/card-mount-bg-desktop.png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-desktop@2x.webp") 2x, url("../../img/card-mount-bg-desktop.webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") 2x, url("../../img/card-mount-bg-desktop.png") 1x);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-desktop.png") type("image/png") 1x);
-  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-desktop.png") type("image/png") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-mount-bg-desktop@2x.webp") 2x, url("../img/card-mount-bg-desktop.webp") 1x, url("../img/card-mount-bg-desktop@2x.png") 2x, url("../img/card-mount-bg-desktop.png") 1x);
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-desktop@2x.webp") 2x, url("../img/card-mount-bg-desktop.webp") 1x, url("../img/card-mount-bg-desktop@2x.png") 2x, url("../img/card-mount-bg-desktop.png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-desktop@2x.webp") 2x, url("../img/card-mount-bg-desktop.webp") 1x, url("../img/card-mount-bg-desktop@2x.png") 2x, url("../img/card-mount-bg-desktop.png") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-mount-bg-desktop.png") type("image/png") 1x);
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-mount-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-mount-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-mount-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-desktop.webp") type("image/webp") 1x, url("../img/card-mount-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-mount-bg-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .catalog__card--parts {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-parts-bg-desktop@2x.webp") 2x, url("../../img/card-parts-bg-desktop.webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") 2x, url("../../img/card-parts-bg-desktop.png") 1x);
-  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-desktop@2x.webp") 2x, url("../../img/card-parts-bg-desktop.webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") 2x, url("../../img/card-parts-bg-desktop.png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-desktop@2x.webp") 2x, url("../../img/card-parts-bg-desktop.webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") 2x, url("../../img/card-parts-bg-desktop.png") 1x);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-desktop.png") type("image/png") 1x);
-  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-desktop.png") type("image/png") 1x);
-  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-desktop.png") type("image/png") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-parts-bg-desktop@2x.webp") 2x, url("../img/card-parts-bg-desktop.webp") 1x, url("../img/card-parts-bg-desktop@2x.png") 2x, url("../img/card-parts-bg-desktop.png") 1x);
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-desktop@2x.webp") 2x, url("../img/card-parts-bg-desktop.webp") 1x, url("../img/card-parts-bg-desktop@2x.png") 2x, url("../img/card-parts-bg-desktop.png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-desktop@2x.webp") 2x, url("../img/card-parts-bg-desktop.webp") 1x, url("../img/card-parts-bg-desktop@2x.png") 2x, url("../img/card-parts-bg-desktop.png") 1x);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-parts-bg-desktop.png") type("image/png") 1x);
+  background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-parts-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-parts-bg-desktop.png") type("image/png") 1x);
+  background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-parts-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-desktop.webp") type("image/webp") 1x, url("../img/card-parts-bg-desktop@2x.png") type("image/png") 2x, url("../img/card-parts-bg-desktop.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1831,9 +1831,9 @@ body {
   content: "";
   position: absolute;
   margin-left: 10px;
-  background-image: -webkit-image-set(url("../../img/airplane@2x.webp") 2x, url("../../img/airplane.webp") 1x, url("../../img/airplane@2x.png") 2x, url("../../img/airplane.png") 1x);
-  background-image: -webkit-image-set(url("../../img/airplane@2x.webp") type("image/webp") 2x, url("../../img/airplane.webp") type("image/webp") 1x, url("../../img/airplane@2x.png") type("image/png") 2x, url("../../img/airplane.png") type("image/png") 1x);
-  background-image: image-set(url("../../img/airplane@2x.webp") type("image/webp") 2x, url("../../img/airplane.webp") type("image/webp") 1x, url("../../img/airplane@2x.png") type("image/png") 2x, url("../../img/airplane.png") type("image/png") 1x);
+  background-image: -webkit-image-set(url("../img/airplane@2x.webp") 2x, url("../img/airplane.webp") 1x, url("../img/airplane@2x.png") 2x, url("../img/airplane.png") 1x);
+  background-image: -webkit-image-set(url("../img/airplane@2x.webp") type("image/webp") 2x, url("../img/airplane.webp") type("image/webp") 1x, url("../img/airplane@2x.png") type("image/png") 2x, url("../img/airplane.png") type("image/png") 1x);
+  background-image: image-set(url("../img/airplane@2x.webp") type("image/webp") 2x, url("../img/airplane.webp") type("image/webp") 1x, url("../img/airplane@2x.png") type("image/png") 2x, url("../img/airplane.png") type("image/png") 1x);
   background-repeat: no-repeat;
   background-size: contain;
   width: 510px;
@@ -1995,7 +1995,9 @@ body {
 }
 
 .footer a {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -2028,7 +2030,7 @@ body {
 }
 
 .footer__logo {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .footer__logo.focus-visible:focus {
@@ -2038,7 +2040,7 @@ body {
 .footer__socials-list {
   margin: 0;
   padding: 0;
-  padding-left: 15px;
+  padding-left: 10px;
   max-width: 215px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2046,14 +2048,21 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
+  -webkit-column-gap: 15px;
+  -moz-column-gap: 15px;
+  column-gap: 15px;
 }
 
 .footer__socials-item {
-  margin: 0 25px 10px 0;
+  margin-bottom: 10px;
 }
 
 .footer__socials-item.focus-visible:focus {
   opacity: 0.8;
+}
+
+.footer__socials-item a {
+  padding: 5px;
 }
 
 .footer__block-group {
@@ -2109,7 +2118,7 @@ body {
   grid-auto-flow: column;
   -ms-grid-rows: (auto)[4];
   grid-template-rows: repeat(4, auto);
-  row-gap: 6px;
+  row-gap: 8px;
   -webkit-column-gap: 28px;
   -moz-column-gap: 28px;
   column-gap: 28px;
@@ -2144,6 +2153,10 @@ body {
 .footer__item a.focus-visible:focus {
   opacity: 0.8;
   text-decoration: underline;
+}
+
+.footer__item a.focus-visible:focus {
+  outline-offset: -3px;
 }
 
 /* @mixin hover-focus {
@@ -2260,13 +2273,13 @@ body {
 
   .intro {
     min-height: 640px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/intro-bg-tablet@2x.webp") 2x, url("../../img/intro-bg-tablet.webp") 1x, url("../../img/intro-bg-tablet@2x.png") 2x, url("../../img/intro-bg-tablet.png") 1x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-tablet@2x.webp") 2x, url("../../img/intro-bg-tablet.webp") 1x, url("../../img/intro-bg-tablet@2x.png") 2x, url("../../img/intro-bg-tablet.png") 1x);
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-tablet@2x.webp") 2x, url("../../img/intro-bg-tablet.webp") 1x, url("../../img/intro-bg-tablet@2x.png") 2x, url("../../img/intro-bg-tablet.png") 1x);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../../img/intro-bg-tablet.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../../img/intro-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../../img/intro-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../../img/intro-bg-tablet.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../img/intro-bg-tablet@2x.webp") 2x, url("../img/intro-bg-tablet.webp") 1x, url("../img/intro-bg-tablet@2x.png") 2x, url("../img/intro-bg-tablet.png") 1x);
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-tablet@2x.webp") 2x, url("../img/intro-bg-tablet.webp") 1x, url("../img/intro-bg-tablet@2x.png") 2x, url("../img/intro-bg-tablet.png") 1x);
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-tablet@2x.webp") 2x, url("../img/intro-bg-tablet.webp") 1x, url("../img/intro-bg-tablet@2x.png") 2x, url("../img/intro-bg-tablet.png") 1x);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../img/intro-bg-tablet.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../img/intro-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../img/intro-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/intro-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/intro-bg-tablet.webp") type("image/webp") 1x, url("../img/intro-bg-tablet@2x.png") type("image/png") 2x, url("../img/intro-bg-tablet.png") type("image/png") 1x);
   }
 
   .intro h2 {
@@ -2360,33 +2373,33 @@ body {
   }
 
   .catalog__card--production {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-prod-bg-tablet@2x.webp") 2x, url("../../img/card-prod-bg-tablet.webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") 2x, url("../../img/card-prod-bg-tablet.png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-tablet@2x.webp") 2x, url("../../img/card-prod-bg-tablet.webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") 2x, url("../../img/card-prod-bg-tablet.png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-tablet@2x.webp") 2x, url("../../img/card-prod-bg-tablet.webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") 2x, url("../../img/card-prod-bg-tablet.png") 1x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-tablet.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-tablet.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-prod-bg-tablet@2x.webp") 2x, url("../img/card-prod-bg-tablet.webp") 1x, url("../img/card-prod-bg-tablet@2x.png") 2x, url("../img/card-prod-bg-tablet.png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-tablet@2x.webp") 2x, url("../img/card-prod-bg-tablet.webp") 1x, url("../img/card-prod-bg-tablet@2x.png") 2x, url("../img/card-prod-bg-tablet.png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-tablet@2x.webp") 2x, url("../img/card-prod-bg-tablet.webp") 1x, url("../img/card-prod-bg-tablet@2x.png") 2x, url("../img/card-prod-bg-tablet.png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-prod-bg-tablet.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-prod-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-prod-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-prod-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-tablet.webp") type("image/webp") 1x, url("../img/card-prod-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-prod-bg-tablet.png") type("image/png") 1x);
   }
 
   .catalog__card--mount {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-mount-bg-tablet@2x.webp") 2x, url("../../img/card-mount-bg-tablet.webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") 2x, url("../../img/card-mount-bg-tablet.png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-tablet@2x.webp") 2x, url("../../img/card-mount-bg-tablet.webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") 2x, url("../../img/card-mount-bg-tablet.png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-tablet@2x.webp") 2x, url("../../img/card-mount-bg-tablet.webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") 2x, url("../../img/card-mount-bg-tablet.png") 1x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-tablet.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-tablet.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-mount-bg-tablet@2x.webp") 2x, url("../img/card-mount-bg-tablet.webp") 1x, url("../img/card-mount-bg-tablet@2x.png") 2x, url("../img/card-mount-bg-tablet.png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-tablet@2x.webp") 2x, url("../img/card-mount-bg-tablet.webp") 1x, url("../img/card-mount-bg-tablet@2x.png") 2x, url("../img/card-mount-bg-tablet.png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-tablet@2x.webp") 2x, url("../img/card-mount-bg-tablet.webp") 1x, url("../img/card-mount-bg-tablet@2x.png") 2x, url("../img/card-mount-bg-tablet.png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-mount-bg-tablet.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-mount-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-mount-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-mount-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-tablet.webp") type("image/webp") 1x, url("../img/card-mount-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-mount-bg-tablet.png") type("image/png") 1x);
   }
 
   .catalog__card--parts {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-parts-bg-tablet@2x.webp") 2x, url("../../img/card-parts-bg-tablet.webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") 2x, url("../../img/card-parts-bg-tablet.png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-tablet@2x.webp") 2x, url("../../img/card-parts-bg-tablet.webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") 2x, url("../../img/card-parts-bg-tablet.png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-tablet@2x.webp") 2x, url("../../img/card-parts-bg-tablet.webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") 2x, url("../../img/card-parts-bg-tablet.png") 1x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-tablet.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-tablet.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-tablet.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-parts-bg-tablet@2x.webp") 2x, url("../img/card-parts-bg-tablet.webp") 1x, url("../img/card-parts-bg-tablet@2x.png") 2x, url("../img/card-parts-bg-tablet.png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-tablet@2x.webp") 2x, url("../img/card-parts-bg-tablet.webp") 1x, url("../img/card-parts-bg-tablet@2x.png") 2x, url("../img/card-parts-bg-tablet.png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-tablet@2x.webp") 2x, url("../img/card-parts-bg-tablet.webp") 1x, url("../img/card-parts-bg-tablet@2x.png") 2x, url("../img/card-parts-bg-tablet.png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-parts-bg-tablet.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-parts-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-parts-bg-tablet.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-parts-bg-tablet@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-tablet.webp") type("image/webp") 1x, url("../img/card-parts-bg-tablet@2x.png") type("image/png") 2x, url("../img/card-parts-bg-tablet.png") type("image/png") 1x);
   }
 
   .catalog h3 {
@@ -2465,6 +2478,7 @@ body {
 
   .footer__socials-list {
     padding-top: 6px;
+    padding-right: 20px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -2472,7 +2486,7 @@ body {
 
   .footer__block-group {
     max-width: none;
-    padding-top: 30px;
+    padding-top: 38px;
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -2544,13 +2558,13 @@ body {
 
   .intro {
     min-height: 560px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") 2x, url("../../img/intro-bg-desktop.webp") 1x, url("../../img/intro-bg-desktop@2x.png") 2x, url("../../img/intro-bg-desktop.png") 1x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") 2x, url("../../img/intro-bg-desktop.webp") 1x, url("../../img/intro-bg-desktop@2x.png") 2x, url("../../img/intro-bg-desktop.png") 1x);
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") 2x, url("../../img/intro-bg-desktop.webp") 1x, url("../../img/intro-bg-desktop@2x.png") 2x, url("../../img/intro-bg-desktop.png") 1x);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
-    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../../img/intro-bg-desktop.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") 2x, url("../img/intro-bg-desktop.webp") 1x, url("../img/intro-bg-desktop@2x.png") 2x, url("../img/intro-bg-desktop.png") 1x);
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") 2x, url("../img/intro-bg-desktop.webp") 1x, url("../img/intro-bg-desktop@2x.png") 2x, url("../img/intro-bg-desktop.png") 1x);
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") 2x, url("../img/intro-bg-desktop.webp") 1x, url("../img/intro-bg-desktop@2x.png") 2x, url("../img/intro-bg-desktop.png") 1x);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../img/intro-bg-desktop@2x.webp") type("image/webp") 2x, url("../img/intro-bg-desktop.webp") type("image/webp") 1x, url("../img/intro-bg-desktop@2x.png") type("image/png") 2x, url("../img/intro-bg-desktop.png") type("image/png") 1x);
   }
 
   .intro h2 {
@@ -2706,33 +2720,33 @@ body {
   }
 
   .catalog__card--production {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-prod-bg-mobile@2x.webp") 2x, url("../../img/card-prod-bg-mobile.webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") 2x, url("../../img/card-prod-bg-mobile.png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-mobile@2x.webp") 2x, url("../../img/card-prod-bg-mobile.webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") 2x, url("../../img/card-prod-bg-mobile.png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-mobile@2x.webp") 2x, url("../../img/card-prod-bg-mobile.webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") 2x, url("../../img/card-prod-bg-mobile.png") 1x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-mobile.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-mobile.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-mobile.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-prod-bg-mobile.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-prod-bg-mobile@2x.webp") 2x, url("../img/card-prod-bg-mobile.webp") 1x, url("../img/card-prod-bg-mobile@2x.png") 2x, url("../img/card-prod-bg-mobile.png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-mobile@2x.webp") 2x, url("../img/card-prod-bg-mobile.webp") 1x, url("../img/card-prod-bg-mobile@2x.png") 2x, url("../img/card-prod-bg-mobile.png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-mobile@2x.webp") 2x, url("../img/card-prod-bg-mobile.webp") 1x, url("../img/card-prod-bg-mobile@2x.png") 2x, url("../img/card-prod-bg-mobile.png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-prod-bg-mobile.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-prod-bg-mobile.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-prod-bg-mobile.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-prod-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-prod-bg-mobile.webp") type("image/webp") 1x, url("../img/card-prod-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-prod-bg-mobile.png") type("image/png") 1x);
   }
 
   .catalog__card--mount {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-mount-bg-mobile@2x.webp") 2x, url("../../img/card-mount-bg-mobile.webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") 2x, url("../../img/card-mount-bg-mobile.png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-mobile@2x.webp") 2x, url("../../img/card-mount-bg-mobile.webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") 2x, url("../../img/card-mount-bg-mobile.png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-mobile@2x.webp") 2x, url("../../img/card-mount-bg-mobile.webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") 2x, url("../../img/card-mount-bg-mobile.png") 1x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-mobile.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-mobile.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-mobile.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-mount-bg-mobile.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-mount-bg-mobile@2x.webp") 2x, url("../img/card-mount-bg-mobile.webp") 1x, url("../img/card-mount-bg-mobile@2x.png") 2x, url("../img/card-mount-bg-mobile.png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-mobile@2x.webp") 2x, url("../img/card-mount-bg-mobile.webp") 1x, url("../img/card-mount-bg-mobile@2x.png") 2x, url("../img/card-mount-bg-mobile.png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-mobile@2x.webp") 2x, url("../img/card-mount-bg-mobile.webp") 1x, url("../img/card-mount-bg-mobile@2x.png") 2x, url("../img/card-mount-bg-mobile.png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-mount-bg-mobile.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-mount-bg-mobile.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-mount-bg-mobile.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-mount-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-mount-bg-mobile.webp") type("image/webp") 1x, url("../img/card-mount-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-mount-bg-mobile.png") type("image/png") 1x);
   }
 
   .catalog__card--parts {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../../img/card-parts-bg-mobile@2x.webp") 2x, url("../../img/card-parts-bg-mobile.webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") 2x, url("../../img/card-parts-bg-mobile.png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-mobile@2x.webp") 2x, url("../../img/card-parts-bg-mobile.webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") 2x, url("../../img/card-parts-bg-mobile.png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-mobile@2x.webp") 2x, url("../../img/card-parts-bg-mobile.webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") 2x, url("../../img/card-parts-bg-mobile.png") 1x);
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-mobile.png") type("image/png") 1x);
-    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-mobile.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-mobile.png") type("image/png") 1x);
-    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../../img/card-parts-bg-mobile.png") type("image/png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), -webkit-image-set(url("../img/card-parts-bg-mobile@2x.webp") 2x, url("../img/card-parts-bg-mobile.webp") 1x, url("../img/card-parts-bg-mobile@2x.png") 2x, url("../img/card-parts-bg-mobile.png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-mobile@2x.webp") 2x, url("../img/card-parts-bg-mobile.webp") 1x, url("../img/card-parts-bg-mobile@2x.png") 2x, url("../img/card-parts-bg-mobile.png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-mobile@2x.webp") 2x, url("../img/card-parts-bg-mobile.webp") 1x, url("../img/card-parts-bg-mobile@2x.png") 2x, url("../img/card-parts-bg-mobile.png") 1x);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(4, 24, 39, 0.5)), color-stop(0%, rgba(4, 24, 39, 0.5))), image-set(url("../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-parts-bg-mobile.png") type("image/png") 1x);
+    background-image: -o-linear-gradient(left, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-parts-bg-mobile.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), -webkit-image-set(url("../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-parts-bg-mobile.png") type("image/png") 1x);
+    background-image: linear-gradient(90deg, rgba(4, 24, 39, 0.5) 0%, rgba(4, 24, 39, 0.5) 0%), image-set(url("../img/card-parts-bg-mobile@2x.webp") type("image/webp") 2x, url("../img/card-parts-bg-mobile.webp") type("image/webp") 1x, url("../img/card-parts-bg-mobile@2x.png") type("image/png") 2x, url("../img/card-parts-bg-mobile.png") type("image/png") 1x);
   }
 
   .catalog__link::before {
@@ -2817,7 +2831,7 @@ body {
   }
 
   .footer__contacts {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     padding-left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   }
@@ -2830,10 +2844,7 @@ body {
 
   .footer__socials-list {
     padding-left: 3px;
-  }
-
-  .footer__socials-item:last-child {
-    margin-right: 0;
+    padding-right: 0;
   }
 
   .footer__block-group {
