@@ -46,6 +46,7 @@
   padding-bottom: 20px;
   grid-column: -1/1;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
 
@@ -56,7 +57,7 @@
   @include vp-767 {
     padding: 0;
     padding-top: 7px;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     gap: 20px;
   }
